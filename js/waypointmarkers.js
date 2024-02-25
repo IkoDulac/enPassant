@@ -1,17 +1,29 @@
-const wpKey = [];
-const wpMarker = {};
+// add or remove draggable markers on the map by clicking on it. put coordinates in draggable boxes for the user to reorder before they can launch routing
+
+// used to create ids for markers
+const dummyArray = [];
+const waypointsMarkers = {};
+
+// activate function on map click
 map.on('click', function(e) {
-	//if (markers[0] != undefined) {};
-	let id = wpKey.push(undefined);
-	wpMarker[id] = new L.marker(e.latlng, {
+	// add an empty entry to 'dummyArray' and let id = new length of array (never 0). array will grow up undefinately, until page is refreshed.
+	let id = dummyArray.push(undefined);
+
+	// leaflet adds a marker on the map which is duplicated as 'waypointsMarkers[id]'
+	waypointsMarkers[id] = new L.marker(e.latlng, {
 		draggable: true,
 		autoPan: true
+	// make it removable (and remove the duplicate)
 	}).addTo(map).on('click', function(e) {
 		e.target.remove();
-		delete wpMarker[id];
-		console.log(wpMarker);
+		delete waypointsMarkers[id];
+		showWaypoints();
+	// update waypointsMarkers's coordinates on drag
+	}).on('drag', function() {
+		let coordinates = waypointsMarkers[id].getLatLng();
+		waypointsMarkers[id].setLatLng(coordinates)
+		showWaypoints();
 	});
-	//markers[0].setLatLng(lat, lng);
-	console.log(id);
-	console.log(wpMarker[id]._latlng);// latlng.lat or latlng.lat
+	showWaypoints();
 });
+

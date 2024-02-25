@@ -5,3 +5,40 @@
 	width: 600px;
 }
 
+.responsive-table {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  white-space:nowrap;
+}
+
+table th {
+  background: #BDBDBD;
+}
+
+table td:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+table td:nth-child(even) {
+  background-color: #E6E6E6;
+}
+
+th, tr, td {
+  border: 1px solid #E0E0E0;
+  padding: 2px;
+}
+
+img {
+  font-style: italic;
+  font-size: 11px;
+}
+
+.ui-sortable{
+  cursor: move;
+}
+tr { display: block; float: left; }
+th, td { display: block; }
