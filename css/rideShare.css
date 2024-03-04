@@ -1,44 +1,44 @@
 /* custom css for rideShare website */
 
+.fa-bars {
+	background : url('/img/fa-bars.png');
+	background-size : contain;
+	height: 18px;
+	width: 18px;
+	display: block;
+}
+
 #map {
 	height: 460px;
 	width: 600px;
 }
 
-.responsive-table {
-  overflow: auto;
-}
-
-table {
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  white-space:nowrap;
-}
-
-table th {
-  background: #BDBDBD;
-}
-
-table td:nth-child(odd) {
-  background-color: #F2F2F2;
-}
-table td:nth-child(even) {
-  background-color: #E6E6E6;
-}
-
-th, tr, td {
-  border: 1px solid #E0E0E0;
-  padding: 2px;
-}
-
-img {
-  font-style: italic;
-  font-size: 11px;
-}
-
 .ui-sortable{
   cursor: move;
 }
-tr { display: block; float: left; }
-th, td { display: block; }
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 4px;
+  height: 1.2rem;
+}
+
+th { text-align: right; }
+
+.waypointTable {
+        float: left;
+        padding: 5px;
+}

@@ -1,4 +1,4 @@
-// add or remove draggable markers on the map by clicking on it. put coordinates in draggable boxes for the user to reorder before they can launch routing
+// add or remove draggable markers on the map by clicking on it. function showWaypoints() (located in same folder) puts coordinates in draggable boxes for the user to reorder before they can launch routing
 
 // used to create ids for markers
 const dummyArray = [];

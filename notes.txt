@@ -1,2 +1,0 @@
-consider TileMill to serve our own tiles
-consider imports with gisgraphy to serve our own geocoder
