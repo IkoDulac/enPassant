@@ -1,0 +1,73 @@
+<div id="map"></div>
+<!--	<div id="wpContainer"></div> -->
+<script>
+	var map = L.map('map').setView([47,-70], 6);
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+</script>
+<script src="js/waypointmarkers.js"></script>
+
+<!-- recommended by osm : <a href="https://www.openstreetmap.org/fixthemap">fix the map</a> -->
+
+<div class="forms">
+<!--	<script src="js/sortablewaypoints.js"></script> -->
+<div class="waypointTable">
+	<table id="headerTable">
+		<tr><th>départ :</th></tr>
+		<tr><th>arrivée :</th></tr>
+	</table>
+</div>	
+<div class="waypointTable">
+	<table id="coordinatesTable" class="ui-state-default">
+		<tr><td>clique la carte</td><td><i class="dragBars"></i></td></tr>
+		<tr><td>clique la carte</td><td><i class="dragBars"></i></td></tr>
+	</table>
+</div>	
+<script>
+	const coordinatesTable = document.getElementById("coordinatesTable");
+	const headerTable = document.getElementById("headerTable");
+</script>
+<div class="clearfix"></div>
+
+<label for="enpassant" class="tooltip" style="cursor: help;">en passant
+	<span class="tooltiptext right" style="width: 200px;">l'option «en passant» signifie que tu es prêt·e à t'arrêter en chemin pour embarquer/débarquer des passager·es. Voir la FAQ pour des détails</span>
+</label>
+<input id="enpassant" type="checkbox" onclick="addRouting()" class="tooltip" value="enpassant" />
+<br><button id="getroute" style="display: none;" onclick="getRoute()">calculer l'itinéraire</button>
+
+
+<div>
+	<form id="post2sql" class="blocklabel" onSubmit="return confirmRoute(event)" action="php/post2sql.php" method="post">
+		<label for="date">jour du départ</label>
+		<input id="date" type="date" name="date" value="" required /><br>
+		<label for="time">heure du départ (optionnel)</label>
+		<input id="time" type="time" name="time" value="" /><br>
+		<input id="timezone" type="hidden" name="timezone" value="" />
+		<label for="seats">places disponibles</label>
+		<input id="seats" name="seats" type="range" min="1" max="7" oninput="this.nextElementSibling.value = this.value" required />
+<output>4</output><br>
+		<label for="detour">détour maximum (km)</label>
+		<input id="detour" name="detour" type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value" />
+		<output>0</output><br>
+		<input id="route" type="hidden" name="route" value="" />
+		<input id="start_ref" type="hidden" name="start_ref" value="" />
+		<input id="start_lng" type="hidden" name="start_lng" value="" />
+		<input id="start_lat" type="hidden" name="start_lat" value="" />
+		<input id="end_ref" type="hidden" name="end_ref" value="" />
+		<input id="end_lng" type="hidden" name="end_lng" value="" />
+		<input id="end_lat" type="hidden" name="end_lat" value="" />
+		<input id="type" type="hidden" name="type" value="enpassant" />
+		<label for="description">informations supplémentaires</label>
+		<textarea id="description" name="description" rows="4" cols="32"></textarea><br>
+		<input id="submitButton" type="submit" value="publier ce voyage" />
+	</form>
+</div>
+</div>
+<script> // set form's minimum date to today
+	document.getElementById("date").min = new Date().toLocaleDateString('en-ca');
+	// hide 'detour' by default
+	document.getElementById("enpassant").checked = false;
+	addRouting();
+</script>

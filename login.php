@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>connexion</title>
-	<?php include 'header.html'; ?>
+	<?php include 'html/header.html'; ?>
 	<script src="js/showpassword.js"></script>
 
 </head>
 
 
 <body>
+	<?php include 'html/guestsnavbar.html'; ?>
 	<div>
 		<h2>connexion</h2>
 		<form action="php/checkpassword.php" method="post">

@@ -1,6 +1,6 @@
 <?php
 
-$newuser = $_GET["username"];
+$newuser = htmlspecialchars($_GET["username"]);
 $dbname = "test";
 $table = "users";
 $warningMessage = "nom déjà utilisé";

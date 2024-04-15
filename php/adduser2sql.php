@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title="enregistrement">
-	<?php include '../header.html'; ?>
-</head>
-<body>
 <?php
 
 $path2registration = "../registration.php";
 
-if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
+if (!isset($_POST)) {
 	exit("erreur : le nom d'utilisatrice ou le mot de passe n'ont pas été tranféré correctement<br><a href='$path2registration'>retour au formulaire</a>");
-} else if (isset($_POST['register'])) {
-
+} else {
 
 	$path2login = "../login.php";
 	$path2passwordReset = "passwordreset.php";
@@ -30,13 +22,10 @@ if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 	$query = "SELECT * FROM $table WHERE email=$1";
 	$result = pg_query_params($connection, $query, array($email)) or die('Query failed: ' . pg_last_error());
 	if (pg_affected_rows($result) == 1) {
-		print("cette adresse email est déjà enregistrée.<br>
-			<a href='$path2login'>retour à la page d'accueil</a><br>
-			ou<br>
-			<a href='$path2passwordReset'>honte à moi, j'ai perdu mon mot de passe</a>");
+		print("cette adresse courriel est déjà enregistrée");
 	} else {
 		// insert new user in table
-		$query = "INSERT INTO users (username, email, password) VALUES ($1, $2, $3);";
+		$query = "INSERT INTO $table (username, email, password) VALUES ($1, $2, $3);";
 		pg_query_params($connection, $query, array($username, $email, $hash)) or die('Query failed: ' . pg_last_error());
 
 		// Free resultset
@@ -47,6 +36,7 @@ if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 		$l = 30;
 		$randomBytes = bin2hex(random_bytes($l));
 		$validationFile = "../registrations/" . $randomBytes . ".php";
+		// loading file url will automaticaly validate user's email and log they
 		$fileContent = <<<EOT
 			<!DOCTYPE html>
 			<html>
@@ -56,7 +46,7 @@ if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 			</head>
 			<body>
 			<?php
-			\$path2login = "../login.html";
+			\$path2login = "../login.php";
 			\$username = "$username";
 			\$dbname = "test";
 			\$table = "users";
@@ -79,10 +69,9 @@ if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 			$fileContent
 		); 
 
-		print("le compte a été créé, il doit être validé dans les 10 prochaines minutes à l'aide du lien envoyé par courriel."); 
-		// TO DO : send email with link
+		shell_exec('echo "une personne veut s\'inscrire sur le site de covoiturage «poney-nordest» avec cette adresse courriel... cette personne pourrait suivre <a href=\'http://localhost:8000/registrations/'.$randomBytes.'.php\'>ce lien</a> pour valider cette adresse courriel" | mailx -a \'Content-Type: text/html\' -s "validation courriel" ' . escapeshellarg($_POST['email'])); 
+
+		print("le compte a été créé, il doit être validé à l'aide du lien envoyé par courriel"); 
 		}
 }
 ?>
-</body>
-</html>

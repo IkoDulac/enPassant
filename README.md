@@ -4,8 +4,8 @@ Aussi, idéalement, il y aurait un geocodeur intégré pour que l'utilisatrice p
 ## les pièces détachées :
 - carte intéractive => [leaflet](https://leafletjs.com/)
 - engin de routing => [OSRM](http://project-osrm.org/)
-- geocodeur => [gisgraphy](https://www.gisgraphy.com/) 
-- sytème de login des utilisatrices => ?
+- geocodeur => Nominatim ou [gisgraphy](https://www.gisgraphy.com/) 
 - base de donnée => postgres (comme le géocodeur l'utilise déjà)
+- apache2 PHP
 ## commentaires
-le fichier json contient une réponse type du routing engine (obtenue depuis l'instance installée sur mon ordinateur personnel) avec une seule route. éventuellement, il faut modifier les codes pour travailler avec une ou deux routes alternatives que l'utilisatrice peut sélectionner en cliquant sur la carte.
+le fichier json contient une réponse type du routing engine avec une seule route. éventuellement, [on pourrait ?] modifier les codes pour travailler avec une ou deux routes alternatives que l'utilisatrice peut sélectionner en cliquant sur la carte.

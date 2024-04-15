@@ -1,0 +1,51 @@
+<script>
+	const cities = ["Chicoutimi",
+		"Gaspé",
+		"Montréal",
+		"Ottawa",
+		"Québec",
+		"Rimouski",
+		"Rouyn-Noranda",
+		"Sherbrooke",
+		"Trois-Rivières"];
+</script>
+<div class="forms">
+	<form id="polygoneform" class="blocklabel" onSubmit="return confirm('publier un voyage de ' + document.getElementById('polystart').value + ' à ' + document.getElementById('polyend').value + ' le ' + document.getElementById('polydate').value + ' ?')" action="php/post2sql.php" method="post">
+		<label for="polystart">départ</label>
+		<select id="polystart" name="start_ref" required></select><br>
+		<label for="polyend">arrivée</label>
+		<select id="polyend" name="end_ref" required></select><br>
+		<label for="polydate">jour du départ</label>
+		<input id="polydate" type="date" name="date" value="" required /><br>
+		<label for="polytime">heure du départ (optionnel)</label>
+		<input id="polytime" type="time" name="time" value="" /><br>
+		<input id="polytimezone" type="hidden" name="timezone" value="" />
+		<label for="polyseats">places disponibles</label>
+		<input id="polyseats" name="seats" type="range" min="1" max="7" oninput="this.nextElementSibling.value = this.value" required />
+<output>4</output><br>
+		<input id="polytype" type="hidden" name="type" value="polygones" />
+		<label for="polydescription">informations supplémentaires</label>
+		<textarea id="polydescription" name="description" rows="4" cols="32"></textarea><br>
+		<input id="submitButton" type="submit" value="publier ce voyage" />
+	</form>
+</div>
+<script> // set form's minimum date to today
+	document.getElementById("polydate").min = new Date().toLocaleDateString('en-ca');
+	document.getElementById("polytimezone").value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+	//populate select elements with cities
+	const polystart = document.getElementById("polystart");
+	const polyend = document.getElementById("polyend");
+
+	populateSelect(polystart);
+	populateSelect(polyend);
+	function populateSelect(id) {
+		cities.forEach(city => {
+			let option = document.createElement("option");
+			option.textContent = city;
+			option.value = city.toLowerCase();
+
+			id.appendChild(option);
+		});
+	}
+</script>

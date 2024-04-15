@@ -1,0 +1,1528 @@
+{
+	"code": "Ok",
+	"routes": [{
+		"geometry": "ey}tGzax`MrxAebGkbNstOwtIwdHsmJ{hA}bCucG_jM_mKuqn@qia@_xMejLc{W{vv@{nG}`c@{zFirJzwByuEgrBebGabOuiAceJuih@_jTmoX_mA_|YodQ}k]ii@ocJ`dB}dHjBmrPi{Malp@fcA{wGsrDwiLd|B_xI",
+		"legs": [{
+			"steps": [{
+				"geometry": "ey}tGzax`MdBqH@C@C@A@A",
+				"maneuver": {
+					"bearing_after": 115,
+					"bearing_before": 0,
+					"location": [-73.692621, 45.541471],
+					"modifier": "right",
+					"type": "depart"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Rue Desenclaves",
+				"intersections": [{
+					"out": 0,
+					"entry": [true],
+					"bearings": [115],
+					"location": [-73.692621, 45.541471]
+				}],
+				"weight": 21.1,
+				"duration": 21.1,
+				"distance": 139.3
+			}, {
+				"geometry": "wu}tG|ww`MBA@?B@@@@?BB|@h@FDp@b@LFJHjBlABBLJ",
+				"maneuver": {
+					"bearing_after": 165,
+					"bearing_before": 153,
+					"location": [-73.691029, 45.540918],
+					"modifier": "straight",
+					"type": "new name"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Rue de Louisbourg",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false],
+					"bearings": [165, 330],
+					"location": [-73.691029, 45.540918]
+				}, {
+					"out": 1,
+					"in": 0,
+					"entry": [false, true, true],
+					"bearings": [30, 210, 300],
+					"location": [-73.691523, 45.540164]
+				}],
+				"weight": 29.1,
+				"duration": 29.1,
+				"distance": 179.8
+			}, {
+				"geometry": "ul}tGf~w`MX\\DMNa@r@sBDKlBoFBGFQFS@Cl@eBXw@@EDKBIDMBGdB_FHUHUpAsDxCsIb@sABEFOFQFO\\cAb@oANa@^gAvA_EL]FSp@kB@GFS",
+				"maneuver": {
+					"bearing_after": 217,
+					"bearing_before": 208,
+					"location": [-73.692038, 45.539472],
+					"modifier": "left",
+					"type": "turn"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Boulevard de l'Acadie",
+				"intersections": [{
+					"out": 2,
+					"in": 0,
+					"entry": [false, false, true, true],
+					"bearings": [30, 120, 225, 300],
+					"location": [-73.692038, 45.539472]
+				}, {
+					"out": 1,
+					"in": 0,
+					"entry": [false, true, true, false],
+					"bearings": [45, 120, 225, 300],
+					"location": [-73.692189, 45.53934]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [120, 210, 300],
+					"location": [-73.691947, 45.539228]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [120, 225, 300],
+					"location": [-73.691374, 45.538968]
+				}, {
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, true, false],
+					"bearings": [30, 120, 210, 300],
+					"location": [-73.689977, 45.538331]
+				}, {
+					"lanes": [{
+						"valid": false,
+						"indications": ["left"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}],
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, true, false],
+					"bearings": [45, 120, 225, 300],
+					"location": [-73.688927, 45.537855]
+				}, {
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, true, false],
+					"bearings": [30, 120, 225, 300],
+					"location": [-73.687586, 45.537253]
+				}, {
+					"lanes": [{
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["right"]
+					}],
+					"out": 1,
+					"in": 3,
+					"entry": [false, true, true, false],
+					"bearings": [30, 120, 210, 300],
+					"location": [-73.684347, 45.53578]
+				}, {
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, false, false],
+					"bearings": [30, 120, 210, 300],
+					"location": [-73.68426, 45.535739]
+				}, {
+					"lanes": [{
+						"valid": false,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["right"]
+					}],
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [120, 210, 300],
+					"location": [-73.682905, 45.535125]
+				}],
+				"weight": 109.200000000,
+				"duration": 109.200000000,
+				"distance": 1057
+			}, {
+				"geometry": "gl|tGjyu`MLFnBhAt@X^RZP\\NvAv@|CbB|Ax@pCzARLHFFFHFJHLLLLNPJNLRLTLVJTHVBDDN",
+				"maneuver": {
+					"bearing_after": 203,
+					"bearing_before": 122,
+					"location": [-73.681023, 45.534275],
+					"modifier": "right",
+					"type": "turn"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Boulevard Henri-Bourassa Ouest",
+				"intersections": [{
+					"lanes": [{
+						"valid": false,
+						"indications": ["left"]
+					}, {
+						"valid": false,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["right"]
+					}],
+					"out": 2,
+					"in": 3,
+					"entry": [false, true, true, false],
+					"bearings": [30, 120, 210, 300],
+					"location": [-73.681023, 45.534275]
+				}, {
+					"out": 1,
+					"in": 0,
+					"entry": [false, true, true],
+					"bearings": [30, 195, 210],
+					"location": [-73.681428, 45.533648]
+				}],
+				"weight": 56.5,
+				"duration": 56.5,
+				"distance": 602.4
+			}, {
+				"geometry": "un{tGrov`MBLDNL_@@IDKFUDO`@wB\\iBd@aCDYDU",
+				"maneuver": {
+					"bearing_after": 243,
+					"bearing_before": 240,
+					"location": [-73.684582, 45.52955],
+					"modifier": "sharp left",
+					"type": "turn"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Boulevard Jules-Poitras",
+				"intersections": [{
+					"lanes": [{
+						"valid": true,
+						"indications": ["left"]
+					}, {
+						"valid": false,
+						"indications": ["straight"]
+					}, {
+						"valid": false,
+						"indications": ["straight", "right"]
+					}],
+					"out": 2,
+					"in": 0,
+					"entry": [false, false, true, true],
+					"bearings": [60, 120, 240, 300],
+					"location": [-73.684582, 45.52955]
+				}, {
+					"lanes": [{
+						"valid": true,
+						"indications": ["left"]
+					}, {
+						"valid": false,
+						"indications": ["straight"]
+					}, {
+						"valid": false,
+						"indications": ["straight", "right"]
+					}],
+					"out": 1,
+					"in": 0,
+					"entry": [false, true, true, false],
+					"bearings": [60, 120, 240, 300],
+					"location": [-73.684728, 45.529501]
+				}, {
+					"lanes": [{
+						"valid": false,
+						"indications": ["left"]
+					}, {
+						"valid": true,
+						"indications": ["straight", "left"]
+					}],
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, false, false],
+					"bearings": [60, 120, 240, 300],
+					"location": [-73.684565, 45.529434]
+				}, {
+					"out": 1,
+					"in": 3,
+					"entry": [false, true, true, false],
+					"bearings": [30, 105, 210, 285],
+					"location": [-73.68236, 45.528777]
+				}],
+				"weight": 34.300000000,
+				"duration": 34.300000000,
+				"distance": 224.2
+			}, {
+				"geometry": "ui{tG`av`MWOu@_@y@a@kDkBq@_@UMQKOMQMMOKMOSKSIQISIUGUGWGYCM{@cE",
+				"maneuver": {
+					"bearing_after": 22,
+					"bearing_before": 111,
+					"location": [-73.682246, 45.528746],
+					"modifier": "left",
+					"type": "turn"
+				},
+				"mode": "driving",
+				"destinations": "15 Sud",
+				"driving_side": "right",
+				"name": "",
+				"intersections": [{
+					"lanes": [{
+						"valid": true,
+						"indications": ["left"]
+					}, {
+						"valid": false,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["none"]
+					}],
+					"out": 0,
+					"in": 3,
+					"entry": [true, true, false, false],
+					"bearings": [30, 105, 225, 285],
+					"location": [-73.682246, 45.528746]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false, true],
+					"bearings": [30, 105, 210, 285],
+					"location": [-73.682168, 45.528871]
+				}],
+				"weight": 28.200000000,
+				"duration": 28.200000000,
+				"distance": 453.7
+			}, {
+				"geometry": "q|{tGpku`M_AyGOiAG_@E[Ee@Gg@Ea@Ei@C[Cc@C[Ck@Eo@Ak@Ck@Ak@Ai@?g@?g@?i@?k@?a@@]@e@@a@@_@@c@Bi@Ba@Dg@Dg@Ba@Da@Dc@Dc@Da@Fc@Fc@Hk@F_@@IDSHa@Ha@j@wC|@oEdBuIpA{GzBkLbAgFbAcFbAcF",
+				"maneuver": {
+					"bearing_after": 71,
+					"bearing_before": 66,
+					"location": [-73.678807, 45.531768],
+					"modifier": "slight left",
+					"type": "merge"
+				},
+				"mode": "driving",
+				"ref": "15",
+				"driving_side": "right",
+				"name": "Autoroute des Laurentides",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-73.678807, 45.531768]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [105, 120, 285],
+					"location": [-73.669882, 45.532055]
+				}],
+				"weight": 73.800000000,
+				"duration": 73.800000000,
+				"distance": 1641.8
+			}, {
+				"geometry": "gj{tGhoq`Mf@{CnBaK|A}Hd@aCVmAF]DWFYDWDQDUBU@G@KBW@U@U@W@S?U?QAU?QASCWCQESCOCK",
+				"maneuver": {
+					"bearing_after": 109,
+					"bearing_before": 112,
+					"location": [-73.658931, 45.528843],
+					"modifier": "slight left",
+					"type": "off ramp"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Autoroute des Laurentides",
+				"intersections": [{
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [105, 120, 300],
+					"location": [-73.658931, 45.528843]
+				}],
+				"weight": 52.4,
+				"duration": 52.4,
+				"distance": 649.5
+			}, {
+				"geometry": "q_{tGt~o`M]w@GKIOGKKKIIIKKGMIKGKEIEICKEa@K{@Wa@MMEKEQGMGUMIEIEIGKGYSYS_@YsAw@",
+				"maneuver": {
+					"bearing_after": 52,
+					"bearing_before": 64,
+					"location": [-73.651148, 45.527131],
+					"modifier": "slight left",
+					"type": "fork"
+				},
+				"mode": "driving",
+				"destinations": "40 Est: Québec",
+				"driving_side": "right",
+				"name": "",
+				"intersections": [{
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [53, 62, 245],
+					"location": [-73.651148, 45.527131]
+				}],
+				"weight": 28.7,
+				"duration": 28.7,
+				"distance": 372.2
+			}, {
+				"geometry": "}q{tGpqo`MYS]UYS]Sa@UmCwAsAu@sAs@g@Ym@_@_Am@kAu@{@g@wAy@iCyAiAo@wBkAsBiAyCaBcCsAaCsAsC_BmAq@eB_AsDsBwBmAwBkAwBmAi@[UM[U[QQMUQWQ[UKKWSYUYS][mJyHoB_BeA}@w@m@YWSQQOOOOOQOOQMQQSSWQWU]S]OWQ]Q]EMGMO[Oc@EOIUIWIYIUGWIYIa@K_@Kk@Kk@Ga@G]Gg@E]Ee@E[Gu@Gw@Ec@Ee@Gs@Ge@Ii@Io@Km@Gc@Kg@Kc@EQQu@Mc@Oc@K]IUIWKYQa@Oc@Ug@Ui@o@wAoAqCyEqKq@wAu@aBO]O]Qc@Oa@O_@Ma@i@{AQi@Ma@Y_Ai@eBe@wAMc@_D}Jc@wA[aAuAmEq@{BcAcDgBsFwBaHY}@]gAQg@Qg@Qc@Qg@Sc@Wm@Sc@Q]OYO[We@Wa@QYS]QYYa@[a@U[W[Y[WWSUSQWW[WUUoAgAgA_AcA}@sBeBqBgBoBaBgB_BkAaA{@s@{@s@yFwEyCgCiB}AeB{AgC{BkC_CsGyFwBkBw@q@uAoAw@o@w@s@m@g@m@i@eA_AaA{@yAoAeB{AeB{AkAcAmAeAmC_CeB{AgA_AoCaCo@i@w@q@e@c@{@s@gB}AqCcCiHkGmAeAsD_D{DiDuCgCkAaAeA_AgA_AkBaBeByAeB{AmAeAgC{BgA_Ag@c@iB_BsAiAqAkAg@e@e@a@g@m@Y[m@u@g@q@S[U_@Ye@]k@]i@{@uAc@u@m@cA{AgCeAcByAcCqBgDYe@]i@S]W_@U]U]W[QUUWo@s@e@g@QQWSg@c@y@s@m@g@gByAaDmC_@[oC_CqBaBeBqA][m@k@QS]]SSWYQUSWUYSW[c@MUOSc@q@Q[QYMSMQMQOUSWSWOQQSYYUUSSMMKGOMQOQOQMOKUMUMOKOISKUKSKUKUIUI_@Km@QsAa@SKSMUOk@c@UOWQYUkJ{HqHkGq@k@cAu@cNiL{F{EwHoGwHsGcEkDyE}DaAy@}DgDuCcCiCwBeGeFqFsEkDwCyE{D}KkJmC}B}IyH_CqBaA{@aCsByCeCoEwDkAaAgGgF}AqA_H}F}CkCoDyC}CkCkB_BsEcEmImHwE_E_FeEgHeGwBgBqCaCc@_@gKyImHiG{CkC_CoBeByAcBwA}AsAm@g@g@c@YW[UUSWSWSOMQKQMUO]U]S[S]Q[Q_@Q]O]Q]M]OYK]K_@Ma@Mc@Ka@K]I]I[E_@G_@G]EWC]E[C_@C_@C_@Aa@A]Aa@?_@?_@?_@@_@@_@@_@B_@B_@Ba@DkANgBPmD`@mFl@_D\\oALwEh@{BVg@D_@D[B]BU@W@S?Q@_@@_@?U?Y?_@Aa@AYA]C_@CWC_@C[Ec@ESEQCWEWE]I]G]K[G]K[K[K[Kg@QqCcAyGaCeKsD}LmEqHkC}By@}EgBmHiCgE{AoDqA{DuAmFmBcDkAcC{@uFqB[KuEcBq@U]M[KYIWI_@K]I_@I]GYG[E]GYC[E]EYC]CWAYAUAYAY?UAW?U?_@Au@?",
+				"maneuver": {
+					"bearing_after": 26,
+					"bearing_before": 23,
+					"location": [-73.649049, 45.530071],
+					"modifier": "slight left",
+					"type": "merge"
+				},
+				"mode": "driving",
+				"ref": "40",
+				"driving_side": "right",
+				"name": "Autoroute Métropolitaine",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [27, 205, 214],
+					"location": [-73.649049, 45.530071]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [30, 195, 210],
+					"location": [-73.64303, 45.539281]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [59, 66, 231],
+					"location": [-73.634795, 45.549167]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [60, 240, 255],
+					"location": [-73.629351, 45.550579]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [59, 66, 240],
+					"location": [-73.61574, 45.556932]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 240],
+					"location": [-73.610391, 45.559247]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [31, 205, 212],
+					"location": [-73.603746, 45.565746]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.602669, 45.566995]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.592723, 45.578038]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [32, 203, 212],
+					"location": [-73.585365, 45.586228]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.582039, 45.589934]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-73.573877, 45.596432]
+				}, {
+					"lanes": [{
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["slight right"]
+					}],
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 36, 212],
+					"location": [-73.569637, 45.601]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 225],
+					"location": [-73.568161, 45.60254]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [30, 195, 210],
+					"location": [-73.564461, 45.606788]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [30, 195, 210],
+					"location": [-73.564071, 45.607319]
+				}, {
+					"lanes": [{
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["slight right"]
+					}],
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.560646, 45.611279]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.552596, 45.620485]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [32, 209, 212],
+					"location": [-73.536071, 45.639249]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.526335, 45.650173]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [32, 206, 212],
+					"location": [-73.521133, 45.656066]
+				}, {
+					"out": 2,
+					"in": 1,
+					"entry": [false, false, true],
+					"bearings": [163, 172, 352],
+					"location": [-73.518774, 45.668313]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [15, 30, 195],
+					"location": [-73.510155, 45.692755]
+				}],
+				"weight": 1227.399999999,
+				"duration": 1227.399999999,
+				"distance": 22302.9
+			}, {
+				"geometry": "}i|uGdet_MkDEor@i@mBCw@?g@Ac@Ae@Ce@Aa@C_@Ay@Ec@C{@EoCKs@AiBCyCAkFE{DEg@A[?[AY?UA]C[CWCc@EYE]EYGYEYG[IYIYK]KOGMEQGOGQIWMUKWMSKUOYOUOYQSO[WWSUSUSSQSS[]YYWYY]sCgD}F}GmCaDkAuAcAkAyF{GmFmG{DsEeCwCo@u@cAkAgD}DaGcHc@i@q@y@w@}@iGkHuAcBaBoB]c@_@c@U[W_@U]OUS[Q[OYOYOWKWO[Q_@M[MYM[O_@K[M_@K[KYI]M]Kc@I[IYI]Ia@Ka@G]G[Ig@Ig@Mu@Ge@Gc@Ec@Ec@C]CSCc@Eg@Ek@Ce@A]Cg@Cq@Cw@EsAm@oRIwCWsGa@iNK_DIgCGqACs@Eo@Cm@Ei@Gk@Gq@Gg@Gk@Im@Ik@Im@Kg@Kk@Kk@Mm@Ok@Mi@Ok@Me@Oe@Mc@Qg@Sk@O_@Oa@Ue@Se@Sc@Sc@We@U_@Ua@Ua@U]W]Y_@Y_@W]YYY]YYYYg@g@iAgAiAgAiCcCgEaEiG_GuBqBy@y@sAoAm@i@w@u@sAmAqAiA{@u@c@]]YaCoBqB_BqBaBs@m@uAiAiDoC[WuBeBkDqC}E}Dis@yk@qHeGsAeAiA_AmAaAoB}AeA}@eAy@o@i@SOYWyBeBmX{TuBcByOmMqEsD{AkAgIyGsIaH_QoNcHyFmFiEKK}CgC]WqEsDkI}GkI{GyAmAqC}Bs@i@k@e@e@_@e@_@oAcA_Aw@mCyBkOaM_CkBw@o@gNaLkB}AiLkJ{PkNmEoDmGgFkGcFiDsCgH{FaAw@e@a@g@a@s@k@YWw@o@{@q@g@a@k@e@m@c@a@[_@Yu@i@g@]e@]eAq@s@e@s@c@e@Yc@WmAs@sDuBsAw@iC{AuHkEiI{EsMwH_CsA}FgDm@]k@]a@W_@U_@W_@Ye@]c@[a@[m@i@WUSQYWYUUUUU[[c@c@}@}@w@u@sAuA][SSk@k@_@_@[[[[k@g@SS]Y[Y_@YYUa@[WSa@Y_@YWQYQYQ[S[Se@YeAk@wA{@yBoAwGyDmHgEmGqDwD{B{CeBaDkBcKaGyIcF{J}FyFeDqI_FsIaFuTkMkBgAyKoGoEiC{LeH_JiFqMuHkI{Ecf@_YiKeGeKcGmEgCg@[oF}CiJqFcCuA_OsI_OsI_GiDsAw@kHeEmBiAqDuBeEcCyDyBiGqDcIwEqQkKsCaBk`Aqj@}NsIeCwAiAq@q@a@k@_@]S_@WWQ[S_@Y[Ua@]YUYUa@]_@]a@_@][iAiAcAgAaAeAcCkCiH{HyA}A}IsJ_DiD{JoK_HqHkk@{m@gYyZaIsI{DgE{DeEeFsFwFeG_CgCaFoFaJwJwIiJeIyIaDkDiDqDaFoFkDwDmEwESUQOQQOOQQQOWSSQWS[W]U[U_@UYQ]S]S]SWMa@Q_@Q]O_@O]MWKYK[IYIUI[IYGYG_@IYEUEWEWEUCWCUCaAKiAKcDYaBOq@GYCUCWC[E[Ea@G_@I_@G]I_@Ia@K_@MYI[KWK_@MUKUK[MWMUMSK[O[SWOYQYQSOWQc@[a@Yk@c@qByAqByAmF_E{EmDqCuBqHqFeHkFsCuBqCsBeCiBw@m@uB}Aw@m@wB}A{GaF_EyCkBuAyDsCc@][U[S[UQMYSa@W[U]S[SSM[Sa@U_@Uk@]y@e@o@]q@]k@[m@Y{@c@yBeAyCwAqCsAqCqAaD}A}DkByBeAiD_BaD}AoCqAcCkAsPaI_LmFcHeDyf@yUwG_DgHiDoCqAaBw@uIcE_LkF{IgE{@a@gHiDcK}EwFmCqFiCaHeDkKcFkMeGeOiH{KkFiK_F{E}BqFkCeFeC_By@e@Ua@S[Qa@Ue@Wa@Se@WiAo@iBaAsBkAkC{AoCcBmAs@wA}@cAq@yA_AgCcBaC_B{B_BmCmBe@[g@_@k@c@e@]sB}AkCqBuC}BaCoBaDiC}CeCgDoCoC}B}E}DcG}E_Aw@eEgDiA_A",
+				"maneuver": {
+					"bearing_after": 0,
+					"bearing_before": 0,
+					"location": [-73.508826, 45.69775],
+					"modifier": "straight",
+					"type": "new name"
+				},
+				"mode": "driving",
+				"ref": "40",
+				"driving_side": "right",
+				"name": "Autoroute Félix-Leclerc",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false],
+					"bearings": [0, 180],
+					"location": [-73.508826, 45.69775]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [0, 15, 180],
+					"location": [-73.508324, 45.711048]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [15, 180, 195],
+					"location": [-73.507742, 45.716465]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [38, 48, 219],
+					"location": [-73.502191, 45.722209]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-73.497977, 45.725933]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [38, 50, 218],
+					"location": [-73.497223, 45.726598]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-73.493349, 45.730018]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [39, 51, 218],
+					"location": [-73.491845, 45.731346]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false],
+					"bearings": [75, 255],
+					"location": [-73.484469, 45.735068]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [83, 87, 264],
+					"location": [-73.478503, 45.73555]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.456776, 45.747885]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [31, 204, 211],
+					"location": [-73.443184, 45.763775]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.420374, 45.790404]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.415629, 45.795951]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [35, 207, 215],
+					"location": [-73.389802, 45.828569]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [15, 30, 210],
+					"location": [-73.35026, 45.887203]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [25, 205, 215],
+					"location": [-73.347036, 45.892055]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [36, 209, 216],
+					"location": [-73.330205, 45.916234]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.325598, 45.920583]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.277152, 45.975613]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [29, 203, 209],
+					"location": [-73.274778, 45.97859]
+				}],
+				"weight": 2092.799999999,
+				"duration": 2092.799999999,
+				"distance": 46503.5
+			}, {
+				"geometry": "}hbxGd||}L",
+				"maneuver": {
+					"bearing_after": 0,
+					"bearing_before": 31,
+					"location": [-73.22579, 46.05599],
+					"modifier": "right",
+					"type": "arrive"
+				},
+				"mode": "driving",
+				"ref": "40",
+				"driving_side": "right",
+				"name": "Autoroute Félix-Leclerc",
+				"intersections": [{
+					"in": 0,
+					"entry": [true],
+					"bearings": [211],
+					"location": [-73.22579, 46.05599]
+				}],
+				"weight": 0,
+				"duration": 0,
+				"distance": 0
+			}],
+			"summary": "Autoroute Métropolitaine, Autoroute Félix-Leclerc",
+			"weight": 3753.5,
+			"duration": 3753.5,
+			"distance": 74126.4
+		}, {
+			"steps": [{
+				"geometry": "}hbxGd||}LwFsEmI}GgJuHaG{EyFuE_EeDyEyDqFoE}DaD_DiCuC_CsEuD{E{D}@u@o@g@cAy@gA}@gA}@_Au@k^sY{D_DaFaEeGaFeG{E}EuDqMsKoPeNcA{@sEqDqLgJoA{@y@a@eBw@mBw@u@Su@MwHiAkNeCm`@oGa@IuI}AsEmA{DeB_E{BwIuHkHwJwO_WeR{ZeSw[cMiSeBoCyDoGsA{BuCiFmAsB_EsGaSy[_BmCm@eAk@iAi@iA{@qBe@mAc@oAc@qA_@qA[oAg@yBm@_De@_D[kCI}@UmCAQ?AoB{Yg@{H_@kFE{@S{BAOAY{@}McD}e@O}BK}AYaEKmACSWqCS_BUaBU}Au@_Ek@iC]yAa@{Ac@yAc@sAe@sAGQyD{IqEwHwEmH_CuDgCgE{CaFwO{VaEuGyDkGiIqMkJoO}IyN_JwNiD_GeDqGwBiFqBmF_AuCq@yBiB_HoI{\\wGiZyAgGK_@qAoFoGeX_Ie]oJsa@}Kwe@cDoNaBgHmBiIcAuEwJ_c@qIy^eCkJ{BmH{BoG{EmK_KaS}BuEWc@_F{Ji@gAsDmHoSoa@eAuBiH_OoCyFi@oAyKyWy@wBiAeCmJkW{@oB_KuWgGcP}F}N_t@emBmSwh@iA_DyCsK_BwFq@wCmCwLi@cCa@mBoCcM[yAcAyEgCgLgAgFsLoj@aCwKo@{CoDiPaH{[eL_i@yBcJoC{IiCeHyCcHaFcKcEgI}F_LsP_\\y`@ow@{CwGiG{MuNs^_GgNmJwRgWkg@oYok@mHiNeIcOyC_GqC{GaAcCIQgA_Ds@yBa@uA[kAUw@qAmF]}AS{@s@aDcAuF[}AGUgAaFqWilAEWeAyEwFsWaAmGw@cHo@iHg@uPk@cVGaC]yNWkLCmCKqL?kKA[?iFJqXFiH^iu@FwN@kB?cC?iH?mANgPK_Hc@_Ly@kI{AyIyAcH{CsKyRki@aT{l@aNg`@iLg\\wIwV_GkUkCmNwBcOaE_XoCkQcJik@{Mg|@wGec@s@{EuFc^]aCi@cDwHag@eAoHiJen@]}By@qFgAeHg@cDgIwi@iAuHaAyFuAuGyA{EsCeHqCmFkJgOaH}KsK{PaDoFgByCaFaI_H{KyHkMwGeKuS_]qCmEeEuG_IoMuQeZ_Su[aVi`@_PgWyIuN}HaM{LyRiFyJYo@Om@Mq@Ms@Iy@EgA?wB@gD@kAAcAEsAO_FAm@?u@Bs@Bc@L{@P}@Xy@nAwC|H}OhCmF",
+				"maneuver": {
+					"bearing_after": 31,
+					"bearing_before": 0,
+					"location": [-73.22579, 46.05599],
+					"modifier": "right",
+					"type": "depart"
+				},
+				"mode": "driving",
+				"ref": "40",
+				"driving_side": "right",
+				"name": "Autoroute Félix-Leclerc",
+				"intersections": [{
+					"out": 0,
+					"entry": [true],
+					"bearings": [31],
+					"location": [-73.22579, 46.05599]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.212789, 46.071161]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [30, 45, 210],
+					"location": [-73.201969, 46.083913]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [15, 192, 200],
+					"location": [-73.193498, 46.094358]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [75, 90, 255],
+					"location": [-73.142479, 46.135007]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [79, 258, 259],
+					"location": [-73.133648, 46.136145]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-73.092752, 46.15901]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [63, 241, 244],
+					"location": [-73.082276, 46.162538]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [50, 52, 229],
+					"location": [-73.031647, 46.18133]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [50, 228, 229],
+					"location": [-73.022363, 46.186838]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-72.962275, 46.214873]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [65, 243, 246],
+					"location": [-72.952038, 46.218085]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [54, 60, 234],
+					"location": [-72.87357, 46.258308]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [60, 240, 255],
+					"location": [-72.866316, 46.260985]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [92, 96, 272],
+					"location": [-72.819189, 46.26865]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [91, 267, 272],
+					"location": [-72.810496, 46.26849]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [71, 76, 251],
+					"location": [-72.725579, 46.293206]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-72.719495, 46.294696]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [70, 73, 251],
+					"location": [-72.699236, 46.299576]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-72.690031, 46.301792]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 51, 226],
+					"location": [-72.674129, 46.311088]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [44, 220, 225],
+					"location": [-72.668164, 46.315225]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 48, 225],
+					"location": [-72.630594, 46.341404]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [135, 300, 315],
+					"location": [-72.620769, 46.342384]
+				}],
+				"weight": 2690.100000000,
+				"duration": 2690.100000000,
+				"distance": 59333
+			}, {
+				"geometry": "sxyyGl~ezLnEiI?A|Pg[`M{TjD_HtC}F~CqG`@w@xAsCpEuJ`BgDbHmN",
+				"maneuver": {
+					"bearing_after": 132,
+					"bearing_before": 129,
+					"location": [-72.616867, 46.340102],
+					"modifier": "straight",
+					"type": "new name"
+				},
+				"mode": "driving",
+				"ref": "40; 55",
+				"driving_side": "right",
+				"name": "Autoroute de l'Énergie",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [132, 310, 313],
+					"location": [-72.616867, 46.340102]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [131, 138, 310],
+					"location": [-72.603111, 46.331525]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [135, 300, 315],
+					"location": [-72.599384, 46.32937]
+				}],
+				"weight": 92.199999999,
+				"duration": 92.199999999,
+				"distance": 2049.5
+			}, {
+				"geometry": "mlwyGtabzLxC_Ff@m@f@g@n@c@~@Yj@Ej@BjC^r@HX?^Ad@Md@U\\[X]Vk@Ro@Jg@Fq@?q@Au@Ge@Ge@Ww@Yo@eA}As@_Au@aAcLwNe@m@{B{CyAuBMQ_C{DuC_H}AkEqEqMkBiFsCcIcDiJs@qBeBcF_@cAy@}Bw@}B]cAW{@Sq@WkAYwAUwAK}@QyAKqAAIE_AC_AC]I{FGuBG}@OiCa@cDo@yD_AmEy@}By@}BePqd@_AiCWs@eEiLoBmFmAgCm@cAiAwAkAiAo@i@mCqAsCg@_AAgA?_ALiANoC|@m@Z}Az@iCfBg@d@cB`BONaBrAaAh@w@^uBp@_J~AkHnAqF`AkFpAoFzAsC~@gE`BeBn@{KzEy@^k@V_CbAcAVw@JcABu@?qZ}AM?[Ek@CmAGSCKAQCMCOCOEMCOGOEOEMEOEOEMGOGMGOGMGOIMGMIMIOKKIMKMIOKOMKIKKMKMMKKMMKMKOMMKOeA_BKOIQKQaEsHwCkF_@s@S_@mA_CuCiFu@sAkA{BwCqF]q@eAoBi@aAk@eA_@s@KS_@u@S_@Uc@U_@Ua@Uc@Sa@Ua@Uc@Ua@Uc@KSMWQ]]m@_@s@Wc@s@sAk@gA_@s@a@q@_@q@i@cAkAuBa@s@i@eAUc@Ua@Uc@S_@Uc@U_@a@s@_@q@KOKQKOKOKOKOKMMMKMMMMKMKKKOKMIMKMGOIMGMGOGOGMGOEOEOGOEMEOCOEQCMCOCOA_@C_@Ac@@]@_@B_@D_@D_@B_@D_@D_@Do@F_@D_@D_@B_@DE@YB_@B_@DSBOB[D_@D_@DKBSB_@BaBP_BLo@HoANo@F_BPsALm@Ha@D_@D]DoALQB]DQ@aAJm@Jo@Fq@Fo@Fo@Ho@Fo@Fo@Fo@Fq@Ho@H_@Do@Fa@DkANa@Dq@Fq@H}@Jo@Hq@Jo@Ho@Fo@Hm@Dq@Fo@Fo@Fo@Fo@Fq@Ho@Di@B}AHI@_@B_@@i@BE?q@Bo@DS@E?a@Bc@BmNh@}Md@_ZtAaMtAoLdCmB\\gGfAyBNcCLgCG}@Ku@O_AWm@Y{@k@i@e@{@aAm@s@q@eAe@_Aq@iB_AwCcAkE}Fu\\mDmToZuqBoVu}AaB{KMu@[sBgIyh@O_AuAcJyR}pAwd@}xC_^_|Bse@a~C}Hag@q@iEs@oE}PsgAmCwQiHyd@yAiI_D_S{BsLgC_JcRwg@i[{z@cBaFuCmIcBuGsAcKaCeT}@_IMmAmAoJyB}KkBcHaCqHiFqL}Xue@oAmBeAkBkh@a|@oCyEuEcHcFyFoF{Ec~@sm@iEuCwCoBcBiAGEil@q`@}@m@cPsK_DuBkAy@_QiLsI{FsVoPoE{Cgh@}]qMyLuKeOsWkc@cl@uaAi`@gp@cC}DqX_e@sBiDko@{fAgU{_@{Ro\\gHuLeMqTuA}BeGaK}@}AkCmEkDaGaRe[qDaHyB_HcBoJw@sMU{j@A_D{@qpACaCGmJG_KC{Do@wJgA}HuBoIyP{n@wLad@{CoMgDqP}BuOsKedAq@mG[uCMqAQ_BmJ}~@sBiSg@}IAiJX}JvGer@rHuu@x@iIlHiv@JcBb@eGReHDkIUgLw@sJkFcf@mBqQwB}LqDiMmD{IiF_J_MyRwCkFyOuVwDeGaNiTiu@ilAkXwc@sE_J}EkMgAkDcZe`AaF}OkD}KqC_I[{@cB{EqEuJ}HoNeQcZ]k@wBmDu@mA{AmC{NsV{AiCqCyEiQoZ]m@mFeJoEwHcEwIeCsHmBaI{AqI{Lm|@{AyK}Jet@cE_[gAwGqAyEuAsDwA{CcCeE{CiDgEkDuJmFs@a@yWgOqYmPyKiGwHoFeIgHcKkKmGqGiEeFqDsFqDyGwg@kcAgC}GcBoFgAcHm@_HaAkOY}EUkDuDsk@aCu`@e@qHo@cK_@uG}Fs`A{@yO_BeZgC_b@{D{n@UaGGqHPaG^kFj@{Dv@kE|@cDjRap@fZ_cAnW{|@hKu`@hE{WtCsVbD_j@pBu`@xAmS~@uV~@c[A}@?sF?uASs`@qB{jBCmBk@gi@]kWGmOAuC?aDi@ee@O{NEwDO}Ok@gi@I_GAwF[w\\mA{TgCsUqAwHuAiGaA}EoAkEoBoGiPwc@qIoUe@qAwJmXi@yAgFsNia@}hA_@cAcC_H{BuHkCyJeE{QOs@Mi@}BaK_Lae@u@aDeBqH{AsHw@yEs@oE_B_NuBsOyB_PaOahAc@aDcAsHo@wEo@kEeFa`@eOqhAgBuK_BoJgEqTcG{WyAmG_Ko]yKw\\gXgy@cBgFoBeGo^yhAuRwl@kE_R_@iCeBcMqF_k@mB{RQiBwHav@e@qE?EoCiXgDe\\iMmnAg@}Ei@kFwEgd@gAyHsAyHmEiSsIs`@g@eCg@cCaBsHcB{H}CwNoEuScDiOgCqLeCmLeAcFsBwKsAwHeBmJy@aFa@aDM_CKwB@cEFkCJiBRcC`@iDvAoH~Leo@r@mDd@}BbQw{@XyAlAeGzC_P~CqOrL{l@`@eCFk@BUDWRaCPqE?yC?iAQ{Eo@{Fc@mB_@aBeDgMkGcVqCqKgB{GaBoG_Ki`@qAyEo@aCq@iCm@}Be[inA}GsWo@yBo@yBc@qAy@{BWo@yAgDiEkJaEkJqIsRaGoMwJmTEIc@aA_R}a@O[Qc@mFsL[o@iAeC",
+				"maneuver": {
+					"bearing_after": 133,
+					"bearing_before": 129,
+					"location": [-72.596911, 46.32791],
+					"modifier": "slight right",
+					"type": "fork"
+				},
+				"mode": "driving",
+				"destinations": "40 Est: Trois-Rivières Centre-Ville, Québec",
+				"ref": "40",
+				"driving_side": "right",
+				"name": "Autoroute Félix-Leclerc",
+				"intersections": [{
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [129, 135, 310],
+					"location": [-72.596911, 46.32791]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-72.591647, 46.324461]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-72.58779, 46.327643]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [55, 66, 237],
+					"location": [-72.575069, 46.33394]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 255, 270],
+					"location": [-72.567457, 46.335778]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [56, 67, 236],
+					"location": [-72.555462, 46.340395]
+				}, {
+					"out": 2,
+					"in": 1,
+					"entry": [false, false, true],
+					"bearings": [148, 157, 337],
+					"location": [-72.550084, 46.347332]
+				}, {
+					"out": 1,
+					"in": 0,
+					"entry": [false, true, true],
+					"bearings": [162, 342, 351],
+					"location": [-72.555585, 46.35955]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [0, 165, 180],
+					"location": [-72.55775, 46.364233]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false],
+					"bearings": [0, 180],
+					"location": [-72.557751, 46.3645]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [0, 15, 180],
+					"location": [-72.557275, 46.368975]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [44, 211, 217],
+					"location": [-72.555452, 46.372488]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-72.547263, 46.377701]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-72.544716, 46.379286]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [41, 219, 227],
+					"location": [-72.537925, 46.383568]
+				}, {
+					"out": 2,
+					"in": 1,
+					"entry": [true, false, true],
+					"bearings": [1, 172, 353],
+					"location": [-72.537552, 46.393494]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [0, 165, 180],
+					"location": [-72.539221, 46.402945]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [71, 76, 251],
+					"location": [-72.492974, 46.436458]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-72.486284, 46.438095]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [70, 76, 251],
+					"location": [-72.377913, 46.464636]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-72.371863, 46.466127]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [27, 31, 207],
+					"location": [-72.295273, 46.51089]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [27, 205, 207],
+					"location": [-72.289899, 46.51814]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-72.226301, 46.57229]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [46, 221, 226],
+					"location": [-72.221039, 46.575854]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-72.050027, 46.609353]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-72.046235, 46.612036]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-71.995789, 46.640988]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 210, 225],
+					"location": [-71.991454, 46.643896]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [69, 79, 252],
+					"location": [-71.944288, 46.662647]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [46, 222, 231],
+					"location": [-71.940122, 46.664292]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [75, 90, 255],
+					"location": [-71.898465, 46.697261]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [80, 253, 260],
+					"location": [-71.891332, 46.698166]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [101, 108, 279],
+					"location": [-71.788161, 46.685665]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [96, 271, 277],
+					"location": [-71.781099, 46.684902]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [87, 94, 269],
+					"location": [-71.736595, 46.685704]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [90, 255, 270],
+					"location": [-71.73049, 46.685911]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [90, 255, 270],
+					"location": [-71.724315, 46.686096]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-71.6505, 46.709368]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [75, 240, 255],
+					"location": [-71.642901, 46.711362]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [75, 240, 255],
+					"location": [-71.637522, 46.712555]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-71.596995, 46.721873]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [60, 225, 240],
+					"location": [-71.591665, 46.723618]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-71.481703, 46.755423]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [65, 238, 245],
+					"location": [-71.476062, 46.757199]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [113, 122, 293],
+					"location": [-71.430138, 46.755933]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [113, 119, 293],
+					"location": [-71.42477, 46.754354]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [105, 285, 300],
+					"location": [-71.41743, 46.752166]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-71.399302, 46.756301]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [61, 235, 242],
+					"location": [-71.393973, 46.75822]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [62, 67, 243],
+					"location": [-71.378215, 46.763858]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [45, 225, 240],
+					"location": [-71.371785, 46.766359]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [52, 228, 232],
+					"location": [-71.367312, 46.768792]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-71.358371, 46.773676]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [51, 230, 232],
+					"location": [-71.349946, 46.778261]
+				}],
+				"weight": 5487,
+				"duration": 5487,
+				"distance": 121266.8
+			}, {
+				"geometry": "ino|GnjnrLuCuHgAcDaAsDUeASkAMgAGy@C{@@aADg@Fm@Nu@Nk@Pm@V}@Ps@Ls@Js@Jw@HoA^aGPkC@m@@m@?eAAs@Ci@QoCGeAEaA?u@Fy@Hu@Nu@\\kAnCqH",
+				"maneuver": {
+					"bearing_after": 53,
+					"bearing_before": 50,
+					"location": [-71.349041, 46.778765],
+					"modifier": "slight right",
+					"type": "off ramp"
+				},
+				"mode": "driving",
+				"destinations": "540 Sud, 20: Pont Pierre-Laporte",
+				"driving_side": "right",
+				"name": "",
+				"intersections": [{
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 60, 225],
+					"location": [-71.349041, 46.778765]
+				}],
+				"weight": 59.1,
+				"duration": 59.1,
+				"distance": 1320.7
+			}, {
+				"geometry": "qmo|GfgkrLfIkQrDyG~Tk^pHcMhC{DxLcS`GiJzB{DzCqElPaXbBuDz@eDb@_DHy@HmBB_@@}@@mAEgHAs@Ak@D_BBaBLwDRkF@g@?m@GkAKkAOaAMk@W}@M]Qa@Q]U]uCaEWc@Sc@c@sA",
+				"maneuver": {
+					"bearing_after": 127,
+					"bearing_before": 123,
+					"location": [-71.333162, 46.778647],
+					"modifier": "slight left",
+					"type": "merge"
+				},
+				"mode": "driving",
+				"ref": "540",
+				"driving_side": "right",
+				"name": "Autoroute Duplessis",
+				"intersections": [{
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [135, 300, 315],
+					"location": [-71.333162, 46.778647]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [135, 139, 316],
+					"location": [-71.323789, 46.772594]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [135, 300, 315],
+					"location": [-71.321527, 46.771057]
+				}, {
+					"lanes": [{
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": true,
+						"indications": ["none"]
+					}, {
+						"valid": false,
+						"indications": ["slight right"]
+					}],
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [134, 138, 316],
+					"location": [-71.315561, 46.766869]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [135, 311, 317],
+					"location": [-71.313573, 46.765473]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [129, 142, 315],
+					"location": [-71.30956, 46.762682]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [90, 255, 270],
+					"location": [-71.305318, 46.761556]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [87, 97, 268],
+					"location": [-71.303835, 46.761593]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [90, 105, 270],
+					"location": [-71.302881, 46.761579]
+				}],
+				"weight": 200.600000000,
+				"duration": 200.600000000,
+				"distance": 3686.4
+			}, {
+				"geometry": "kml|Gd~crLoCsG_@}@",
+				"maneuver": {
+					"bearing_after": 52,
+					"bearing_before": 59,
+					"location": [-71.295865, 46.763257],
+					"modifier": "straight",
+					"type": "new name"
+				},
+				"mode": "driving",
+				"ref": "175",
+				"driving_side": "right",
+				"name": "Boulevard Laurier",
+				"intersections": [{
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [60, 225, 240],
+					"location": [-71.295865, 46.763257]
+				}],
+				"weight": 14.6,
+				"duration": 14.6,
+				"distance": 162
+			}, {
+				"geometry": "{rl|GrscrLIg@Kk@?G?QJ]L_@xBkCnAuALONQv@kAj@w@JQzAqBh@u@zAoBf@w@jBeC@E",
+				"maneuver": {
+					"bearing_after": 71,
+					"bearing_before": 52,
+					"location": [-71.294178, 46.76414],
+					"modifier": "right",
+					"type": "turn"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Avenue Lavigerie",
+				"intersections": [{
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [60, 75, 240],
+					"location": [-71.294178, 46.76414]
+				}, {
+					"out": 0,
+					"in": 1,
+					"entry": [true, false, false],
+					"bearings": [135, 300, 315],
+					"location": [-71.293319, 46.764118]
+				}, {
+					"out": 1,
+					"in": 3,
+					"entry": [true, true, true, false],
+					"bearings": [45, 150, 225, 315],
+					"location": [-71.292616, 46.763508]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [135, 225, 330],
+					"location": [-71.29219, 46.763106]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, false, false],
+					"bearings": [135, 225, 315],
+					"location": [-71.29211, 46.763044]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 135, 315],
+					"location": [-71.292017, 46.762964]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 135, 315],
+					"location": [-71.291363, 46.762459]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 135, 315],
+					"location": [-71.290695, 46.761935]
+				}, {
+					"out": 0,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [135, 225, 315],
+					"location": [-71.289867, 46.76127]
+				}, {
+					"out": 1,
+					"in": 2,
+					"entry": [true, true, false],
+					"bearings": [45, 135, 315],
+					"location": [-71.288919, 46.760534]
+				}],
+				"weight": 55.599999999,
+				"duration": 55.599999999,
+				"distance": 596.6
+			}, {
+				"geometry": "g|k|GprbrL",
+				"maneuver": {
+					"bearing_after": 0,
+					"bearing_before": 136,
+					"location": [-71.288894, 46.760516],
+					"modifier": "right",
+					"type": "arrive"
+				},
+				"mode": "driving",
+				"driving_side": "right",
+				"name": "Avenue Lavigerie",
+				"intersections": [{
+					"in": 0,
+					"entry": [true],
+					"bearings": [316],
+					"location": [-71.288894, 46.760516]
+				}],
+				"weight": 0,
+				"duration": 0,
+				"distance": 0
+			}],
+			"summary": "Autoroute Félix-Leclerc, Autoroute Duplessis",
+			"weight": 8599.2,
+			"duration": 8599.2,
+			"distance": 188414.9
+		}],
+		"weight_name": "routability",
+		"weight": 12352.7,
+		"duration": 12352.7,
+		"distance": 262541.3
+	}],
+	"waypoints": [{
+		"hint": "yqRDg2Tz14zyAAAAxwAAABwAAAAMAAAAn_MhQ2pDBEN0lJJBwYTiQPIAAADHAAAAHAAAAAwAAADvYQAAM4qb-1_otgL6iZv7C-i2AgMAPwdRDfip",
+		"distance": 10.343556174,
+		"name": "Rue Desenclaves",
+		"location": [-73.692621, 45.541471]
+	}, {
+		"hint": "L9ucg____38VAAAAXgAAAHgQAAArAwAAUf5AQvzqIEM-aBJG7FDhRBUAAABeAAAAeBAAACsDAADvYQAAwqmi-zbCvgLgsKL7SL--AmAA7wFRDfip",
+		"distance": 163.755306246,
+		"name": "Autoroute Félix-Leclerc",
+		"location": [-73.22579, 46.05599]
+	}, {
+		"hint": "ca1mhIKtZoQRAAAAAwAAAB8AAAAAAAAAZJqZQe0CMUA7fAtCAAAAABEAAAADAAAAHwAAAAAAAADvYQAAwjfA-0SCyQKJN8D7HoLJAgEAvxNRDfip",
+		"distance": 6.066023722,
+		"name": "Avenue Lavigerie",
+		"location": [-71.288894, 46.760516]
+	}]
+}

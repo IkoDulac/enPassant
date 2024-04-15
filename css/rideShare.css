@@ -1,6 +1,36 @@
-/* custom css for rideShare website */
+/*
+ * main css 
+ */
+html {height: 100%;
 
-.fa-bars {
+body {
+	background-color: #edf1f0;
+	background-image: linear-gradient(#d1f3fc, white);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 0px 5px 5px 5px;
+	height: 100%;
+	margin: 0;
+}
+
+.switchtab, .tabnavbar {margin: 0px 25px 0px 25px;}
+/*
+ * leaflet map, in search and post pages
+ */
+#map {
+	height: 460px;
+	width: 100%;
+	border-style: solid;
+	margin: auto;
+	border-color: #090e38;
+}
+
+
+/*
+ * sortable table for waypoints under the map
+ * applies to all tables
+ */
+.dragBars {
 	background : url('/img/fa-bars.png');
 	background-size : contain;
 	height: 18px;
@@ -8,23 +38,14 @@
 	display: block;
 }
 
-#map {
-	height: 460px;
-	width: 600px;
-}
-
 .ui-sortable{
   cursor: move;
 }
 
-.clearfix::after {
-content: "";
-display: table;
-clear: both;
-}
 
 table {
   font-family: arial, sans-serif;
+  font-size: 0.9em;
   border-collapse: collapse;
   width: 100%;
   overflow: auto;
@@ -33,12 +54,180 @@ table {
 td, th {
   border: 1px solid #dddddd;
   padding: 4px;
-  height: 1.2rem;
+  height: 1.1rem;
 }
 
-th { text-align: right; }
+.waypointTable th { text-align: right; }
 
 .waypointTable {
         float: left;
-        padding: 5px;
+        padding: 5px 0px 5px 0px;
+}
+
+
+/* clearfix hack */
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/*
+ * navbars and splash
+ */
+.navbar li {
+	display: inline-block;
+	margin: 0px 4px 0px 4px;
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	display: block;
+	background-color: white;
+	color: #553986;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+#splash {
+	background-image: url('/img/poneysplash.jpg');
+	background-repeat: repeat-x;
+	margin: auto;
+	height: 80px;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#splash h1 {
+	color: white; 
+	text-shadow:
+		-1px -1px 0 #000,
+		 1px -1px 0 #000,
+		-1px  1px 0 #000,
+		 1px  1px 0 #000;
+}
+
+/*
+ * home page tabs
+ */
+.tabnavbar a {
+	width: 145px;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 4px 8px 4px;
+	text-decoration: none;
+}
+
+.hiddenTab {
+	color: white;
+	background-image: url('/img/poneytabgrey.jpg');
+	background-size: cover;
+	padding: 3px;
+}
+
+.activeTab {
+	color: white;
+	font-weight: bold;
+	padding: 3px;
+	background-image: url('/img/poneytab.jpg');
+	background-size: cover;
+}
+
+/*
+ * home page rides table
+ */
+#myrides, #usersrides {font-size: 0.875em;}
+
+.td-noborder {border:none;}
+.td-button {font-size: 1.25em;}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	background-color: #7a4789;
+	color: white;
+	border-radius: 3px;
+	border-width: 1px;
+	padding: 3px;
+	z-index: 1;
+	position: absolute;
+	top: -5px;
+}
+.tooltiptext.left {right: 105%;}
+.tooltiptext.right {left: 105%;}
+
+.tooltip:hover .tooltiptext {visibility: visible;}
+
+/*
+ * forms and buttons
+ */
+input, button {
+	margin: 3px;
+	cursor: pointer;
+}
+
+form.blocklabel label {
+	text-decoration: overline;
+	display: block;
+	margin-top: 10px;
+}
+
+.forms {
+	border-style: solid;
+	border-width: 1px;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px 0px 5px 0px;
+}
+
+input[type=submit], input::file-selector-button {
+	margin-top: 10px;
+	background-color: #32065b;
+	color: white;
+	border: none;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+#editridesform {overflow-x: scroll;}
+
+/*
+ * profile pages
+ */
+.avatar {
+	width: 85px;
+	height: 85px;
+	overflow: hidden;
+}
+
+.avatar img {width: 80px;}
+
+p.contactinfo, span.contactinfo {
+	display:  inline-block;
+	font-size: 0.875em;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+h1.contactinfo {
+	font-size: 1em;
+	margin-bottom: 0px;
 }
