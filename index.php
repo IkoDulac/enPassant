@@ -8,16 +8,8 @@ if (isset($_SESSION['logged'])) {
 <!DOCTYPE html>
 <html>
 <head>
-        <title>home page</title>
-        <?php include 'html/header.html'; ?>
-
-	<script>
-	let sessvar = "<?php echo htmlentities($_SESSION['username']); ?>"; 
-	if (sessvar) {
-		window.location.replace('home.php');
-	}
-	</script>
-
+        <title>Poney Nordest</title>
+<?php include 'html/header.html'; ?>
 	<link rel="stylesheet" href="js/leaflet/leaflet.css">
 	<script src="js/leaflet/leaflet.js"></script>
 	<script src="js/jquery-3.7.1.min.js"></script>
@@ -28,6 +20,8 @@ if (isset($_SESSION['logged'])) {
 </head>
 <body>
 	<?php include 'html/guestsnavbar.html'; ?>
+	<div id="splash"><h1>Poney Nordest</h1></div>
+	<hr>
 
 <div class="switchtab">	
 	<div id="map"></div>
@@ -40,12 +34,11 @@ if (isset($_SESSION['logged'])) {
 		}).addTo(map);
 	</script>
 	<script src="js/waypointmarkers.js"></script>
-	<script>const searchRide = 1; //used in wpmarkers.js to limit number of markers</script>
+	<script>const enPassant = false; //used to limit number of markers on map</script>
 
 <!-- recommended by osm : <a href="https://www.openstreetmap.org/fixthemap">fix the map</a> -->
 	
 <div class="forms">
-<!--	<script src="js/sortablewaypoints.js"></script> -->
 	<div class="waypointTable">
 		<table id="headerTable">
 			<tr><th>départ :</th></tr>

@@ -7,8 +7,7 @@ const waypointsMarkers = {};
 
 map.on('click', function(e) {
 	// control number of markers (max 5, max 2 for searches)
-	if (!(Object.keys(waypointsMarkers).length > 4 || (Object.keys(waypointsMarkers).length > 1 && (typeof searchRide !== 'undefined')))) {
-
+	if (!(Object.keys(waypointsMarkers).length > 4 || (Object.keys(waypointsMarkers).length > 1 && !(enPassant)))) {
 		let id = dummyArray.push(undefined); // set id as a 'SERIAL' sql-like int
 		
 		clearRoute();
@@ -25,7 +24,7 @@ map.on('click', function(e) {
 		// update coordinates on drag
 		}).on('drag', function() {
 			let coordinates = waypointsMarkers[id].getLatLng();
-			waypointsMarkers[id].setLatLng(coordinates)
+			waypointsMarkers[id].setLatLng(coordinates);
 			showWaypoints();
 			clearRoute();
 		});

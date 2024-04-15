@@ -18,6 +18,9 @@ if (!isset($_SESSION['logged'])) {
 
 <body>
 	<?php include 'html/navbar.html'; ?>
+	<div id="splash"><h1>Poney Nordest</h1></div>
+	<hr>
+
 	<div>
 		<div class="tabnavbar">
 			<a id="defaultTab" href="javascript:void(0)" onclick="switchTab(event, 'rides');">

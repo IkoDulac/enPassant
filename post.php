@@ -1,14 +1,16 @@
 <?php
 session_start();
+if (!isset($_SESSION['logged'])) {
+	header('Location: index.php');
+	exit();
+}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>publier</title>
-	<?php include 'html/header.html'; ?>
-	<script>isLogged("<?php echo htmlentities($_SESSION['username']); ?>");</script>
-
+<?php include 'html/header.html'; ?>
 	<link rel="stylesheet" href="js/leaflet/leaflet.css">
 	<!--  <link rel="stylesheet" href="css/jquery-ui.css"> -->
 	<script src="js/leaflet/leaflet.js"></script>
@@ -28,9 +30,6 @@ session_start();
 		<a href="javascript:void(0)" onclick="switchTab(event, 'quickpost');">
 			<div class="tablink hiddenTab">trajets courants</div>
 		</a>
-        <!--            <a href="javascript:void(0)" onclick="switchTab(event, '');">
-                                <div class="tablink"></div>
-                        </a> -->
 	</div>
 
 	<div id="wpmap" class="switchtab">
@@ -43,12 +42,6 @@ session_start();
 </div>
 
 <script> document.getElementById("defaultTab").click(); </script>
-<!--	<script src="js/showwaypoints.js"></script>
-	<script src="js/getroute.js"></script>
-	<button onclick="getRoute()">calculer l'itinéraire</button>
-	<script src="js/postroute.js"></script>
-	<button onclick="confirmRoute('enpassant')">publier ce voyage</button>
--->
 
 </body>
 <!-- footer with email -->

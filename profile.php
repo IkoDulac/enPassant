@@ -49,6 +49,8 @@ require __DIR__."/php/queryusersprofile.php";
 	</script>
 </head>
 <body>
+	<?php include 'html/navbar.html' ?>
+<div class="switchtab">
 	<div><?php queryProfile($userID); ?></div>
 
 	<button onclick="toggleHidden('profilerides')">voir les offres</button><br>
@@ -68,6 +70,7 @@ require __DIR__."/php/queryusersprofile.php";
 			<input id="submitButton" type="submit" value="publier cet avis" />
 		</form>
 	</div>
+</div>
 </body>
 </html>
 

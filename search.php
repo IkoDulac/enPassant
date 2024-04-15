@@ -32,12 +32,9 @@ session_start();
 		<a href="javascript:void(0)" onclick="switchTab(event, 'hashtagsearch');">
 			<div class="tablink hiddenTab">par évènements</div>
 		</a>
-<!--            <a href="javascript:void(0)" onclick="switchTab(event, '');">
-			<div class="tablink"></div>
-		</a> -->
 	</div>
 	<div id="wpsearch" class="switchtab">
-		<?php include 'html/wpsearch.html'; ?>
+		<?php include 'html/waypointsearch.html'; ?>
 	</div>
 	<div id="quicksearch" class="switchtab">
 		<p>quick</p>
@@ -47,13 +44,6 @@ session_start();
 	</div>
 </div>
 	<script>document.getElementById("defaultTab").click();</script>
-
-<!--	<script src="js/showwaypoints.js"></script>
-	<script src="js/getroute.js"></script>
-	<button onclick="getRoute()">calculer l'itinéraire</button>
-	<script src="js/postroute.js"></script>
-	<button onclick="confirmRoute('enpassant')">publier ce voyage</button>
--->
 
 </body>
 <!-- footer with email -->

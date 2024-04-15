@@ -52,6 +52,7 @@ function confirmRoute(event) {
         }
 }
 
+
 /*
  * called on form submit by confirmRoute()
  * fetch nominatim geocoder to convert gps
@@ -92,11 +93,11 @@ function getWeekday(d) {
 
 
 /*
+ * called by map.on('click') function
  * show waypoints' coordinates in the "routingWaypoints" table
- * is called by markers.js
  */
 const sortedWaypoints = [];
-var removedWaypointsIndex = 1; // this var is used to make sure 'start' is replaced when it is removed before finish
+let removedWaypointsIndex = 1; // this var is used to make sure 'start' is replaced when it is removed before finish
 
 function showWaypoints(){
 	// make waypointsMarkers object an array (thus iterable) of [number, object] pairs
@@ -168,7 +169,9 @@ function showWaypoints(){
 	});
 };
 
+
 /*
+ * button activated ('calculer l'itinéraire')
  * fetch route from routing machine
  * post polyline to map
  * save route as jsonData variable
@@ -271,11 +274,13 @@ function addRouting() {
 		maxDetour.style.display = "block";
 		detourLabel.style.display = "block";
 		detourOutput.style.display = "block";
+		enPassant = true;
 	} else {
 		type.value = "waypoints";
 		routeButton.style.display = "none";
 		maxDetour.style.display = "none";
 		detourLabel.style.display = "none";
 		detourOutput.style.display = "none";
+		enPassant = false;
 	}
 }

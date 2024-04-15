@@ -6,6 +6,8 @@
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
+
+	let enPassant = false;
 </script>
 <script src="js/waypointmarkers.js"></script>
 
@@ -31,26 +33,24 @@
 </script>
 <div class="clearfix"></div>
 
-<label for="enpassant" class="tooltip" style="cursor: help;">en passant
-	<span class="tooltiptext right" style="width: 200px;">l'option «en passant» signifie que tu es prêt·e à t'arrêter en chemin pour embarquer/débarquer des passager·es. Voir la FAQ pour des détails</span>
-</label>
+<label for="enpassant">en passant</label>
 <input id="enpassant" type="checkbox" onclick="addRouting()" class="tooltip" value="enpassant" />
+<span class="tooltip"><img src="/img/questionmark.ico" style="height: 1em;"><span class="tooltiptext right" style="width: 200px;">l'option «en passant» signifie que tu es prêt·e à t'arrêter en chemin pour embarquer/débarquer des passager·es. Voir la FAQ pour plus de détails</span></span>
 <br><button id="getroute" style="display: none;" onclick="getRoute()">calculer l'itinéraire</button>
-
 
 <div>
 	<form id="post2sql" class="blocklabel" onSubmit="return confirmRoute(event)" action="php/post2sql.php" method="post">
 		<label for="date">jour du départ</label>
-		<input id="date" type="date" name="date" value="" required /><br>
+		<input id="date" type="date" name="date" value="" required />
 		<label for="time">heure du départ (optionnel)</label>
-		<input id="time" type="time" name="time" value="" /><br>
+		<input id="time" type="time" name="time" value="" />
 		<input id="timezone" type="hidden" name="timezone" value="" />
 		<label for="seats">places disponibles</label>
 		<input id="seats" name="seats" type="range" min="1" max="7" oninput="this.nextElementSibling.value = this.value" required />
-<output>4</output><br>
+<output>4</output>
 		<label for="detour">détour maximum (km)</label>
-		<input id="detour" name="detour" type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value" />
-		<output>0</output><br>
+		<input id="detour" name="detour" type="range" value="15" min="0" max="100" oninput="this.nextElementSibling.value = this.value" />
+		<output>15</output>
 		<input id="route" type="hidden" name="route" value="" />
 		<input id="start_ref" type="hidden" name="start_ref" value="" />
 		<input id="start_lng" type="hidden" name="start_lng" value="" />

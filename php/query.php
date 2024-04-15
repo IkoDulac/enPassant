@@ -79,7 +79,7 @@ if (!isset($_POST)) {
 			<td><?php echo $row['rides_date']; ?></td>
 			<td><?php echo $row['time']/* . " " . $row['timezone']*/; ?></td>
 		<td><?php echo $row['description']; ?></td>
-		<td style="border: none"><a href="/profile.php?usr=<?php echo $row['userid']; ?>">contact</a></td>
+		<td style="border: none; cursor: help;" class="tooltip"><a href="/profile.php?usr=<?php echo $row['userid']; ?>">contact<span class="tooltiptext left">certains profiles ne sont visibles que par les utilisatrices</span></a></td>
 		</tr>
 	<?php endforeach; ?>
 	</table>

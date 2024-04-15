@@ -4,8 +4,6 @@
  * query database for all user's rides
  */
 
-session_start();
-
 // constants
 $dbname = "test";
 $table = "offers";
