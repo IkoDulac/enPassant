@@ -37,11 +37,13 @@ session_start();
 		<?php include 'html/waypointsearch.html'; ?>
 	</div>
 	<div id="quicksearch" class="switchtab">
-		<p>quick</p>
+		<?php include 'html/quicksearch.html'; ?>
 	</div>
 	<div id="hashtagsearch" class="switchtab">
 		<p>hastag</p>
 	</div>
+
+	<div id="result"></div>
 </div>
 	<script>document.getElementById("defaultTab").click();</script>
 

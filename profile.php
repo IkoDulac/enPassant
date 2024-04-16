@@ -65,12 +65,14 @@ require __DIR__."/php/queryusersprofile.php";
 	<div id="newreview" style="display: none;">
 		<form id="newreview" class="blocklabel" action="php/newreview2sql.php" method="post">
 			<input name="userID" type="hidden" value="<?php echo $userID; ?>"/>
+			<input id="username" name="username" type="hidden" value="" />
 			<label for="review">un très haut niveau de bienveillance est exigé</label>
 			<textarea id="review" name="review" rows="4" cols="46"></textarea><br>
 			<input id="submitButton" type="submit" value="publier cet avis" />
 		</form>
 	</div>
 </div>
+<script>document.getElementById("username").value = "<?php echo $username; ?>";</script>
 </body>
 </html>
 

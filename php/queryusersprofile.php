@@ -9,12 +9,13 @@ $dbname = "test";
 $usersTable = "users";
 $offersTable = "offers";
 $reviewsTable = "reviews";
+$username = "";
 
 /*
  * query avatar and contact info
  */
 function queryProfile($userID) {
-	global $dbname, $usersTable, $connection;
+	global $dbname, $usersTable, $connection, $username;
 
 	$query = "SELECT * FROM $usersTable WHERE id = $1;";
 	$result = pg_query_params($connection, $query, array($userID));
@@ -23,9 +24,10 @@ function queryProfile($userID) {
 
 	if ($row) {
 		$contactWithBr = nl2br($row['contact_info']);
+		$username = $row['username'];
 		include 'navbar.html';
 		$html = <<<EOD
-			<h1 class="contactinfo">{$row['username']}</h1>
+			<h1 class="contactinfo">$username</h1>
 			<div class="avatar"><img src="{$row['img_path']}" alt="avatar"></div>
 			<h1 class="contactinfo">contacts (en ordre de préférence)</h1>
 			<p class="contactinfo"><span>$contactWithBr</span></p>
@@ -89,36 +91,39 @@ function queryRides($userID) {
  */
 function queryReviews($userID) {
 	global $dbname, $reviewsTable, $connection;
+		$query = "SELECT * FROM $reviewsTable WHERE user_to = $1 OR user_from = $1;";
+		$result = pg_query_params($connection, $query, array($userID)) or die("Query failed: " . pg_last_error());
+		$reviews = pg_fetch_all($result);
+		pg_free_result($result);
 
-	$query = "SELECT * FROM $reviewsTable WHERE user_to = $1;";
-	$result = pg_query_params($connection, $query, array($userID)) or die("Query failed: " . pg_last_error());
-	$reviews = pg_fetch_all($result);
-	pg_free_result($result);
-
-	if ($reviews) {
-		$html = <<<EOD
-		<table>
+		if ($reviews) {
+			$html = <<<EOD
+			<table>
+				<tr>
+					<th>de qui</th>
+					<th>à qui</th>
+					<th>l'avis</th>
+					<th>date</th>
+				<tr>
+			EOD;
+			echo $html;
+		foreach ($reviews as $review) {
+			$brReview = nl2br($review['review']);
+			$html = <<<EOD
 			<tr>
-				<th>qui</th>
-				<th>l'avis</th>
-				<th>date</th>
-			<tr>
-		EOD;
-		echo $html;
-	foreach ($reviews as $review) {
-		$brReview = nl2br($review['review']);
-		$html = <<<EOD
-		<tr>
-		<td><a href="profile.php?usr={$review['user_from']}">{$review['username_from']}</a></td>
-		<td>$brReview</td>
-		<td>{$review['date_writen']}</td>
-		</tr>
-		EOD;
-		echo $html;
+			<td><a href="profile.php?usr={$review['user_from']}">{$review['username_from']}</a></td>
+			<td><a href="profile.php?usr={$review['user_to']}">{$review['username_to']}</a></td>
+			<td>$brReview</td>
+			<td>{$review['date_writen']}</td>
+			</tr>
+			EOD;
+			echo $html;
 
-	}} else {
-		echo "<p>aucun avis</p>";
-	}
+		}
+			echo "</table>";
+		} else {
+			echo "<p>aucun avis</p>";
+		}
 }
 
 /*

@@ -34,14 +34,13 @@
 
 <div>
 <!--		<form id="query" onSubmit="addCoordinates()" action="php/query.php" method="post"> -->
-	<form id="query" class="blocklabel" onSubmit="queryOffers()" action="javascript:void(0)" method="post">
+	<form id="wpQueryForm" class="blocklabel" onSubmit="queryOffers(this.id)" action="javascript:void(0)" method="post">
 		<label for="dateMin">date minimum</label>
-		<input id="dateMin" type="date" name="dateMin" value="" oninput="setNewMin()" required /><br>
+		<input id="dateMin" type="date" name="dateMin" value="" oninput="setNewMin(this.id, 'dateMax')" required />
 		<label for="dateMax">date maximum</label>
-		<input id="dateMax" type="date" name="dateMax" value="" required /><br>
-		<input id="start" type="hidden" name="start" value="" />
-		<input id="end" type="hidden" name="end" value="" />
-		<input id="submitButton" type="submit" value="lancer" />
+		<input id="dateMax" type="date" name="dateMax" value="" />
+		<input id="type" type="hidden" name="type" value="waypoints" />
+		<br><input id="submitButton" type="submit" value="lancer" />
 	</form>
 </div>
 </div>
@@ -49,4 +48,3 @@
 	document.getElementById("dateMin").min = new Date().toLocaleDateString('en-ca');
 	document.getElementById("dateMax").min = new Date().toLocaleDateString('en-ca');
 </script>
-<p id="result"></p>

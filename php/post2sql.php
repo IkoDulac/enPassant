@@ -24,10 +24,10 @@ if (!isset($_POST)) {
 	// empty $time must be explicitely set to null for sql insert
 	$time = !empty($_POST['time']) ? $_POST['time'] : null;
 	$timezone = isset($_POST['timezone']) ? $_POST['timezone'] : null;
-	$startRef = isset($_POST['start_ref']) ? $_POST['start_ref'] : null;
+	$startRef = isset($_POST['start_ref']) ? strtolower($_POST['start_ref']) : null;
 	$startLng = isset($_POST['start_lng']) ? $_POST['start_lng'] : null;
 	$startLat = isset($_POST['start_lat']) ? $_POST['start_lat'] : null;
-	$endRef = isset($_POST['end_ref']) ? $_POST['end_ref'] : null;
+	$endRef = isset($_POST['end_ref']) ? strtolower($_POST['end_ref']) : null;
 	$endLng = isset($_POST['end_lng']) ? $_POST['end_lng'] : null;
 	$endLat = isset($_POST['end_lat']) ? $_POST['end_lat'] : null;
 	$description = isset($_POST['description']) ? htmlspecialchars($_POST['description']) : null;
@@ -75,7 +75,7 @@ if (!isset($_POST)) {
 		} else {
 			echo "Error inserting data: " . pg_last_error($connection);
 		}
-	} elseif ($offerType == "polygones") {
+	} elseif ($offerType == "polygons") {
 		$query = "INSERT INTO $table (userID, rides_date, time, timezone, start_ref, end_ref, offer_type, seats, description) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);";
 		$result = pg_query_params($connection, $query, array($userID, $date, $time, $timezone, $startRef, $endRef, $offerType, $seats, $description));
 		if ($result) {

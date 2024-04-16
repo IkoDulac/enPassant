@@ -1,11 +1,11 @@
 <script>
-	const cities = ["Chicoutimi",
-		"Gaspé",
+	const cities = [
 		"Montréal",
 		"Ottawa",
 		"Québec",
 		"Rimouski",
 		"Rouyn-Noranda",
+		"Saguenay",
 		"Sherbrooke",
 		"Trois-Rivières"];
 </script>
@@ -23,7 +23,7 @@
 		<label for="polyseats">places disponibles</label>
 		<input id="polyseats" name="seats" type="range" min="1" max="7" oninput="this.nextElementSibling.value = this.value" required />
 <output>4</output><br>
-		<input id="polytype" type="hidden" name="type" value="polygones" />
+		<input id="polytype" type="hidden" name="type" value="polygons" />
 		<label for="polydescription">informations supplémentaires</label>
 		<textarea id="polydescription" name="description" rows="4" cols="32"></textarea><br>
 		<input id="submitButton" type="submit" value="publier ce voyage" />

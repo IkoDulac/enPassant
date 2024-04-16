@@ -34,9 +34,9 @@ function checkUniq(field, value) {
 }
 
 // in search forms, adjust dateMax.min to be equal to dateMin
-function setNewMin() {
-	let dateMin = document.getElementById("dateMin").value;
-	document.getElementById("dateMax").min = dateMin;
+function setNewMin(minID, maxID) {
+	let dateMin = document.getElementById(minID).value;
+	document.getElementById(maxID).min = dateMin;
 }
 
 // switch between visible tabs (<div>)

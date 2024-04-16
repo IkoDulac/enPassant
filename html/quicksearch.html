@@ -1,0 +1,47 @@
+<script>
+	const cities = [
+		"Montréal",
+		"Ottawa",
+		"Québec",
+		"Rimouski",
+		"Rouyn-Noranda",
+		"Saguenay",
+		"Sherbrooke",
+		"Trois-Rivières"];
+</script>
+<div class="forms">
+	<form id="polygonForm" class="blocklabel" onSubmit="queryOffers(this.id)" action="javascript:void(0)" method="post">
+		<label for="polystart">départ</label>
+		<select id="polystart" name="start_ref" required></select>
+		<label for="polyend">arrivée</label>
+		<select id="polyend" name="end_ref" required></select>
+		<label for="polydateMin">date minimum</label>
+		<input id="polydateMin" type="date" name="dateMin" value="" oninput="setNewMin(this.id, 'polydateMax')" required /><br>
+		<label for="polydateMax">date maximum</label>
+		<input id="polydateMax" type="date" name="dateMax" value="" />
+		<input id="polytype" type="hidden" name="type" value="wp_ref" />
+		<br><input id="submitButton" type="submit" value="lancer" />
+	</form>
+</div>
+<script> // set form's minimum date to today
+	document.getElementById("polydateMin").min = new Date().toLocaleDateString('en-ca');
+	document.getElementById("polydateMax").min = new Date().toLocaleDateString('en-ca');
+
+	/*
+	 * populate <select> inputs with const cities[]
+	 */
+	const polystart = document.getElementById("polystart");
+	const polyend = document.getElementById("polyend");
+
+	populateSelect(polystart);
+	populateSelect(polyend);
+	function populateSelect(id) {
+		cities.forEach(city => {
+			let option = document.createElement("option");
+			option.textContent = city;
+			option.value = city.toLowerCase();
+
+			id.appendChild(option);
+		});
+	}
+</script>
