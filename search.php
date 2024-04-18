@@ -40,7 +40,7 @@ session_start();
 		<?php include 'html/quicksearch.html'; ?>
 	</div>
 	<div id="hashtagsearch" class="switchtab">
-		<p>hastag</p>
+		<?php include 'php/hashtags.php'; ?>
 	</div>
 
 	<div id="result"></div>

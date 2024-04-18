@@ -52,4 +52,8 @@ function switchTab(evt, tabName) {
 	}
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.firstElementChild.className = evt.currentTarget.firstElementChild.className.replace(" hiddenTab", " activeTab");
+
+	if (document.getElementById("result")) {
+		document.getElementById("result").innerHTML = "";
+	}
 }

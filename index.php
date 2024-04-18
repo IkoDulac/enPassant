@@ -58,23 +58,25 @@ if (isset($_SESSION['logged'])) {
 	<div class="clearfix"></div>
 	
 	<div>
-		<form id="query" class="blocklabel" onSubmit="queryOffers()" action="javascript:void(0)" method="post">
+		<form id="wpQueryForm" class="blocklabel" onSubmit="queryOffers(this.id)" action="javascript:void(0)" method="post">
 			<label for="dateMin">date minimum</label>
-			<input id="dateMin" type="date" name="dateMin" value="" oninput="setNewMin()" required />
+			<input id="dateMin" type="date" name="dateMin" value="" oninput="setNewMin(this.id, 'dateMax')" required />
 			<label for="dateMax">date maximum (optionel)</label>
 			<input id="dateMax" type="date" name="dateMax" value="" /><br>
-			<input id="start" type="hidden" name="start" value="" />
-                        <input id="end" type="hidden" name="end" value="" />
+			<input id="start" type="hidden" name="start" value="" required />
+                        <input id="end" type="hidden" name="end" value="" required />
+                        <input id="type" type="hidden" name="type" value="waypoints" />
 			<input id="submitButton" type="submit" value="chercher un voyage" />
 		</form>
 	</div>
 </div>
+
+<div id="result"></div>
 </div>
 	<script> // set form's minimum date to today
 		document.getElementById("dateMin").min = new Date().toLocaleDateString('en-ca');
 		document.getElementById("dateMax").min = new Date().toLocaleDateString('en-ca');
 	</script>
-	<p id="result"></p>
 
 </body>
 <!-- footer with email -->

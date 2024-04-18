@@ -14,6 +14,8 @@ body {
 }
 
 .switchtab, .tabnavbar {margin: 0px 25px 0px 25px;}
+
+h1 {font-size: 1.2em;}
 /*
  * leaflet map, in search and post pages
  */
@@ -148,7 +150,7 @@ clear: both;
 }
 
 /*
- * home page rides table
+ * home page, rides table, query result
  */
 #myrides, #usersrides {font-size: 0.875em;}
 
@@ -207,6 +209,22 @@ input[type=submit], input::file-selector-button {
 }
 
 #editridesform {overflow-x: scroll;}
+
+.button-group button {
+	font-size: 1.1em;
+	color: blue;
+	background: none;
+	border: none;
+	padding; 20px;
+	cursor: pointer;
+	float: left;
+}
+.button-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* button-group button:hover {} */
 
 /*
  * profile pages

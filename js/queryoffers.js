@@ -27,3 +27,26 @@ function queryOffers(formID) {
 		console.error('error sending data to server : ', error);
 	});
 }
+
+function queryHash(hash) {
+	let formData = new FormData();
+	formData.append('type', "hashtag");
+	formData.append('hashtag', hash);
+
+	fetch(path2query, {
+		method: 'POST',
+		body: formData
+	})
+	.then(response => {
+		if (!response.ok) {
+			throw new Error('failed to fetch response from server');
+		}
+		return response.text();
+	})
+	.then(data => {
+		document.getElementById("result").innerHTML = data;
+	})
+	.catch(error => {
+		console.error('error sending data to server : ', error);
+	});
+}

@@ -25,6 +25,8 @@ if (!isset($_POST)) {
 	$startRef = isset($_POST['start_ref']) ? $_POST['start_ref'] : null;
 	$endRef = isset($_POST['end_ref']) ? $_POST['end_ref'] : null;
 	$type = isset($_POST['type']) ? $_POST['type'] : null;
+	$hashtag = isset($_POST['hashtag']) ? $_POST['hashtag'] : null;
+
 
 	if ($type == "waypoints") {
 		$params = array(
@@ -90,9 +92,6 @@ if (!isset($_POST)) {
 		$result = pg_query_params($connection, $query, $params) or die('Query failed: ' . pg_last_error());
 		$rows = pg_fetch_all($result);
 
-		pg_free_result($result);
-		pg_close($connection);
-
 	} elseif ($type == "wp_ref") {
 		$query = "
 			SELECT *
@@ -104,9 +103,19 @@ if (!isset($_POST)) {
 		$result = pg_query_params($connection, $query, $params) or die('Query failed: ' . pg_last_error());
 		$rows = pg_fetch_all($result);
 
-		pg_free_result($result);
-		pg_close($connection);
+
+	} elseif ($type == "hashtag") {
+		$query ="
+			SELECT *
+			FROM $table
+			WHERE description LIKE '%#' || $1 || '%'
+			;";
+		$result = pg_query_params($connection, $query, array($hashtag)) or die('Query failed: ' . pg_last_error());
+		$rows = pg_fetch_all($result);
 	}
+
+	pg_free_result($result);
+	pg_close($connection);
 }
 ?>
 
@@ -126,7 +135,7 @@ if (!isset($_POST)) {
 		<td><?php echo $row['rides_date']; ?></td>
 		<td><?php echo $row['time']/* . " " . $row['timezone']*/; ?></td>
 	<td><?php echo $row['description']; ?></td>
-	<td style="border: none; cursor: help;" class="tooltip">
+	<td class="tooltip td-noborder">
 	<a href="/profile.php?usr=<?php echo $row['userid']; ?>">contact
 	<span class="tooltiptext left">certains profils ne sont visibles que par les utilisatrices</span>
 	</a></td>
